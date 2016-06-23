@@ -1,7 +1,7 @@
 ## Ruby - how to store functions in an array.
 
 ```ruby
-# Your function
+# Your functions
 def test1
   puts "test 1"
 end
@@ -14,10 +14,9 @@ def test3
   puts "test 3"
 end
 
-# put your function in an array using the method function and a symbol.
+# put your functions in an array using the method function and a symbol.
 arr = [method(:test1),method(:test2),method(:test3)]
 
 # call each method as you map over it
-
 arr.map { |method| method.call  }
 ```
