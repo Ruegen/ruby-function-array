@@ -21,7 +21,7 @@ arr = [method(:test1),method(:test2),method(:test3)]
 arr.map { |method| method.call  }
 ```
 
-## another way would be to store a lambda or Proc to do the task
+### Another way would be to store a lambda or Proc to do the task.
 ```ruby
 # using Proc
 test1 = Proc.new {puts "test 1"}
